@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Schedule(Tables)</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        form {
+            width: 70%;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tech Conference 2026</h1>
+
+    <h2>Event Schedule</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00 AM</td>
+                <td>Opening Ceremony</td>
+                <td>Main Hall</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>AI Workshop</td>
+                <td>Lab 1</td>
+            </tr>
+            <tr>
+                <td>02:00 PM</td>
+                <td>Project Showcase</td>
+                <td>Auditorium</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Section 2: Registration Form -->
+    <h2>Event Registration Form</h2>
+
+    <form method="post" action="submit.html">
+        
+        <!-- Text Input -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Email Input -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Number Input -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+
+        <!-- Date Input -->
+        <label for="date">Event Date:</label>
+        <input type="date" id="date" name="date">
+
+        <!-- Radio Buttons -->
+        <label>Ticket Type:</label>
+        <input type="radio" id="standard" name="ticket" value="Standard">
+        <label for="standard">Standard</label>
+
+        <input type="radio" id="premium" name="ticket" value="Premium">
+        <label for="premium">Premium</label>
+
+        <input type="radio" id="vip" name="ticket" value="VIP">
+        <label for="vip">VIP</label>
+
+        <!-- Checkboxes -->
+        <label>Workshop Preferences:</label>
+        <input type="checkbox" id="web" name="workshop" value="Web">
+        <label for="web">Web Development</label>
+
+        <input type="checkbox" id="ai" name="workshop" value="AI">
+        <label for="ai">Artificial Intelligence</label>
+
+        <input type="checkbox" id="cloud" name="workshop" value="Cloud">
+        <label for="cloud">Cloud Computing</label>
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+        <!-- Submit Button -->
+        <br><br>
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
